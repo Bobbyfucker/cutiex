@@ -9,7 +9,7 @@ from YinsRobot import (
     TIGERS,
     WOLVES,
     dispatcher,
-) 
+)
 from YinsRobot.modules.helper_funcs.chat_status import dev_plus
 from YinsRobot.modules.helper_funcs.extraction import (
     extract_user,
