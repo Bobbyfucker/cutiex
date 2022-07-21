@@ -113,7 +113,7 @@ Click on the button bellow to get description about specifics command."""
 
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project by contacting @DarkRider2003 \
+ You can support the project by contacting @love_u_bobby \
  Supporting isnt always financial! \
  Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
@@ -360,7 +360,7 @@ def yins_about_callback(update, context):
     query = update.callback_query
     if query.data == "yins_":
         query.message.edit_text(
-            text="๏ I'm *Alexy*, a powerful group management bot built to help you manage your group easily."
+            text="๏ I'm *cutie*, a powerful group management bot built to help you manage your group easily."
             "\n• I can restrict users."
             "\n• I can greet users with customizable welcome messages and even set a group's rules."
             "\n• I have an advanced anti-flood system."
@@ -368,7 +368,7 @@ def yins_about_callback(update, context):
             "\n• I have a note keeping system, blacklists, and even predetermined replies on certain keywords."
             "\n• I check for admins' permissions before executing any command and more stuffs"
             "\n\n_Yin's licensed under the GNU General Public License v3.0_"
-            "\n\n Click on button bellow to get basic help for AlexyRobot.",
+            "\n\n Click on button bellow to get basic help for cutieRobot.",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -378,11 +378,11 @@ def yins_about_callback(update, context):
                     InlineKeyboardButton(text="Notes", callback_data="Alexy_notes"),
                  ],
                  [
-                    InlineKeyboardButton(text="Support", callback_data="HiTechRockets"),
+                    InlineKeyboardButton(text="【👑sᴜᴘᴘᴏʀᴛ👑】", callback_data="HiTechRockets"),
                     InlineKeyboardButton(text="Credits", callback_data="HiTechRocket"),
                  ],
                  [
-                    InlineKeyboardButton(text="Source Code", url="https://github.com/Thilinaweerasekara2003/YinsRobot"),
+                    InlineKeyboardButton(text="【🌍ɴᴇᴛᴡᴏʀᴋ🌏】", url="https://github.com/Thilinaweerasekara2003/YinsRobot"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="Alexy_back"),
@@ -441,11 +441,11 @@ def yins_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Support", url="https://t.me/HiTechRockets"),
-                    InlineKeyboardButton(text="Updates", url="https://t.me/HiTechRocket"),
+                    InlineKeyboardButton(text="【👑sᴜᴘᴘᴏʀᴛ👑】", url="https://t.me/comrade_network"),
+                    InlineKeyboardButton(text="【🌍ɴᴇᴛᴡᴏʀᴋ🌏】", url="https://t.me/comrade_robotz"),
                  ],
                  [
-                    InlineKeyboardButton(text="Go Back", callback_data="yins_"),
+                    InlineKeyboardButton(text="【🌟ɢᴏ ʙᴀᴄᴋ🌟】", callback_data="yins_"),
                  
                  ]
                 ]
