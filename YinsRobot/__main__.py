@@ -374,12 +374,12 @@ def yins_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Admins", callback_data="Alexy_admin"),
-                    InlineKeyboardButton(text="Notes", callback_data="Alexy_notes"),
+                    InlineKeyboardButton(text="【👮ᴀᴅᴍɪɴ👮‍♀️】", callback_data="Alexy_admin"),
+                    InlineKeyboardButton(text="【📒ɴᴏᴛᴇs📒】", callback_data="Alexy_notes"),
                  ],
                  [
                     InlineKeyboardButton(text="【👑sᴜᴘᴘᴏʀᴛ👑】", callback_data="HiTechRockets"),
-                    InlineKeyboardButton(text="Credits", callback_data="HiTechRocket"),
+                    InlineKeyboardButton(text="【😈ᴄᴏᴍʀᴀᴅᴇ😈】", callback_data="HiTechRocket"),
                  ],
                  [
                     InlineKeyboardButton(text="【🌍ɴᴇᴛᴡᴏʀᴋ🌏】", url="https://github.com/Thilinaweerasekara2003/YinsRobot"),
