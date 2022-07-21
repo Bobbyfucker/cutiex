@@ -1,4 +1,3 @@
-
 import random, html
 
 from YinsRobot import dispatcher
