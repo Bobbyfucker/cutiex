@@ -97,13 +97,12 @@ buttons = [
     ],
     [
         InlineKeyboardButton(text="【🤡ᴄᴏᴍᴍᴀɴᴅs ʜᴇʟᴘ🤡】", callback_data="help_back"),
-        InlineKeyboardButton(
-            text="Try inline!​​", switch_inline_query_current_chat=""
-        ),
+        InlineKeyboardButton(text="Try inline!​​", switch_inline_query_current_chat=""),
     ],
     [
         InlineKeyboardButton(
-            text="【🌟ᴀᴅᴅ ᴍᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ🌟】", url=f"t.me/{bu}?startgroup=new"),
+            text="【🌟ᴀᴅᴅ ᴍᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ🌟】", url=f"t.me/{bu}?startgroup=new"
+        ),
     ],
 ]
 
@@ -198,7 +197,13 @@ def start(update: Update, context: CallbackContext):
                     update.effective_chat.id,
                     HELPABLE[mod].__help__,
                     InlineKeyboardMarkup(
-                        [[InlineKeyboardButton(text="Go Back", callback_data="help_back")]]
+                        [
+                            [
+                                InlineKeyboardButton(
+                                    text="Go Back", callback_data="help_back"
+                                )
+                            ]
+                        ]
                     ),
                 )
 
@@ -221,7 +226,8 @@ def start(update: Update, context: CallbackContext):
                     escape_markdown(first_name),
                     escape_markdown(uptime),
                     sql.num_users(),
-                    sql.num_chats()),                        
+                    sql.num_chats(),
+                ),
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
@@ -230,8 +236,8 @@ def start(update: Update, context: CallbackContext):
     else:
         update.effective_message.reply_text(
             f"👋 Hi, I am {dispatcher.bot.first_name}. Nice to meet you.",
-            parse_mode=ParseMode.HTML
-       )
+            parse_mode=ParseMode.HTML,
+        )
 
 
 def error_handler(update, context):
@@ -373,20 +379,32 @@ def yins_about_callback(update, context):
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
-                 [
-                    InlineKeyboardButton(text="【👮ᴀᴅᴍɪɴ👮‍♀️】", callback_data="Alexy_admin"),
-                    InlineKeyboardButton(text="【📒ɴᴏᴛᴇs📒】", callback_data="Alexy_notes"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="【👑sᴜᴘᴘᴏʀᴛ👑】", callback_data="HiTechRockets"),
-                    InlineKeyboardButton(text="【😈ᴄᴏᴍʀᴀᴅᴇ😈】", callback_data="HiTechRocket"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="【🌍ɴᴇᴛᴡᴏʀᴋ🌏】", url="https://t.me/comrade_network"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="Go Back", callback_data="Alexy_back"),
-                 ]
+                    [
+                        InlineKeyboardButton(
+                            text="【👮ᴀᴅᴍɪɴ👮‍♀️】", callback_data="Alexy_admin"
+                        ),
+                        InlineKeyboardButton(
+                            text="【📒ɴᴏᴛᴇs📒】", callback_data="Alexy_notes"
+                        ),
+                    ],
+                    [
+                        InlineKeyboardButton(
+                            text="【👑sᴜᴘᴘᴏʀᴛ👑】", callback_data="HiTechRockets"
+                        ),
+                        InlineKeyboardButton(
+                            text="【😈ᴄᴏᴍʀᴀᴅᴇ😈】", callback_data="HiTechRocket"
+                        ),
+                    ],
+                    [
+                        InlineKeyboardButton(
+                            text="【🌍ɴᴇᴛᴡᴏʀᴋ🌏】", url="https://t.me/comrade_network"
+                        ),
+                    ],
+                    [
+                        InlineKeyboardButton(
+                            text="Go Back", callback_data="Alexy_back"
+                        ),
+                    ],
                 ]
             ),
         )
@@ -394,15 +412,16 @@ def yins_about_callback(update, context):
         first_name = update.effective_user.first_name
         uptime = get_readable_time((time.time() - StartTime))
         query.message.edit_text(
-                PM_START_TEXT.format(
-                    escape_markdown(first_name),
-                    escape_markdown(uptime),
-                    sql.num_users(),
-                    sql.num_chats()),
-                reply_markup=InlineKeyboardMarkup(buttons),
-                parse_mode=ParseMode.MARKDOWN,
-                timeout=60,
-                disable_web_page_preview=False,
+            PM_START_TEXT.format(
+                escape_markdown(first_name),
+                escape_markdown(uptime),
+                sql.num_users(),
+                sql.num_chats(),
+            ),
+            reply_markup=InlineKeyboardMarkup(buttons),
+            parse_mode=ParseMode.MARKDOWN,
+            timeout=60,
+            disable_web_page_preview=False,
         )
 
     elif query.data == "Alexy_admin":
@@ -440,48 +459,67 @@ def yins_about_callback(update, context):
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
-                 [
-                    InlineKeyboardButton(text="【👑sᴜᴘᴘᴏʀᴛ👑】", url="https://t.me/comrade_robotz"),
-                    InlineKeyboardButton(text="【🌍ɴᴇᴛᴡᴏʀᴋ🌏】", url="https://t.me/comrade_network"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="【🌟ɢᴏ ʙᴀᴄᴋ🌟】", callback_data="yins_"),
-                 
-                 ]
+                    [
+                        InlineKeyboardButton(
+                            text="【👑sᴜᴘᴘᴏʀᴛ👑】", url="https://t.me/comrade_robotz"
+                        ),
+                        InlineKeyboardButton(
+                            text="【🌍ɴᴇᴛᴡᴏʀᴋ🌏】", url="https://t.me/comrade_network"
+                        ),
+                    ],
+                    [
+                        InlineKeyboardButton(text="【🌟ɢᴏ ʙᴀᴄᴋ🌟】", callback_data="yins_"),
+                    ],
                 ]
             ),
         )
-
 
     elif query.data == "Alexy_credit":
         query.message.edit_text(
-            text=f"๏ Credis for Alexy\n"
-            "\n𝗨𝗡𝗗𝗘𝗥🔻𝗧𝗘𝗔𝗠 𝗖𝗢𝗠𝗥𝗔𝗗𝗘🔺 𝗚𝗥𝗢𝗨𝗣𝗦",
+            text=f"๏ Credis for Alexy\n" "\n𝗨𝗡𝗗𝗘𝗥🔻𝗧𝗘𝗔𝗠 𝗖𝗢𝗠𝗥𝗔𝗗𝗘🔺 𝗚𝗥𝗢𝗨𝗣𝗦",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
-                 [
-                    InlineKeyboardButton(text="༝༚❰ ᴅᴇᴀʀ🔞ᴄᴏᴍʀᴀᴅ𝛆 ❱༟", url="https://t.me/tamil_comrade"),  
-                 ],
-                 [
-                    InlineKeyboardButton(text="༝༚❰ ᴋᴀᴅᴀʟᴏʀᴀ🖤ᴋᴀᴅᴀʟᴀɪ❱༟", url="https://t.me/kadalora_kadalai"),
-                    InlineKeyboardButton(text="༝༚❰ ʀᴏʏᴀʟ 👑ғᴀᴍɪʟʏ❱༟", url="https://t.me/tamilchatroyalfamily"),
-                 ],
-                
-                 [
-                    InlineKeyboardButton(text="༝༚❰ 🍁sɪᴠᴀᴍᴀʏᴀᴍ🍁 ❱༟ ", url="https://t.me/SiVaMaYaMm"),
-                    InlineKeyboardButton(text="༝༚❰ 🎶ᴍᴜsɪᴄ sᴛᴀᴛɪᴏɴ🎶 ❱༟", url="https://t.me/dc_music_station"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="😉𝐔ɾυƚυ 𝐌αɱα 𝐔ʅʅα 𝐕αɱαα😻", url="https:t.me/ullavanthu_uruttu"),
-                    InlineKeyboardButton(text="༚❰🔻sǫᴜɪᴅ ɢᴀᴍᴇ🔺❱༟", url="https://t.me/squid_game_x"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="【𝗚𝗢 𝗕𝗔𝗖𝗞】", callback_data="yins_"),
-                 ]
+                    [
+                        InlineKeyboardButton(
+                            text="༝༚❰ ᴅᴇᴀʀ🔞ᴄᴏᴍʀᴀᴅ𝛆 ❱༟", url="https://t.me/tamil_comrade"
+                        ),
+                    ],
+                    [
+                        InlineKeyboardButton(
+                            text="༝༚❰ ᴋᴀᴅᴀʟᴏʀᴀ🖤ᴋᴀᴅᴀʟᴀɪ❱༟",
+                            url="https://t.me/kadalora_kadalai",
+                        ),
+                        InlineKeyboardButton(
+                            text="༝༚❰ ʀᴏʏᴀʟ 👑ғᴀᴍɪʟʏ❱༟",
+                            url="https://t.me/tamilchatroyalfamily",
+                        ),
+                    ],
+                    [
+                        InlineKeyboardButton(
+                            text="༝༚❰ 🍁sɪᴠᴀᴍᴀʏᴀᴍ🍁 ❱༟ ", url="https://t.me/SiVaMaYaMm"
+                        ),
+                        InlineKeyboardButton(
+                            text="༝༚❰ 🎶ᴍᴜsɪᴄ sᴛᴀᴛɪᴏɴ🎶 ❱༟",
+                            url="https://t.me/dc_music_station",
+                        ),
+                    ],
+                    [
+                        InlineKeyboardButton(
+                            text="😉𝐔ɾυƚυ 𝐌αɱα 𝐔ʅʅα 𝐕αɱαα😻",
+                            url="https:t.me/ullavanthu_uruttu",
+                        ),
+                        InlineKeyboardButton(
+                            text="༚❰🔻sǫᴜɪᴅ ɢᴀᴍᴇ🔺❱༟", url="https://t.me/squid_game_x"
+                        ),
+                    ],
+                    [
+                        InlineKeyboardButton(text="【𝗚𝗢 𝗕𝗔𝗖𝗞】", callback_data="yins_"),
+                    ],
                 ]
             ),
         )
+
 
 def Source_about_callback(update, context):
     query = update.callback_query
@@ -501,26 +539,24 @@ def Source_about_callback(update, context):
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [
-                 [
-                    InlineKeyboardButton(text="Go Back", callback_data="yins_")
-                 ]
-                ]
+                [[InlineKeyboardButton(text="Go Back", callback_data="yins_")]]
             ),
         )
     elif query.data == "source_back":
         first_name = update.effective_user.first_name
         query.message.edit_text(
-                PM_START_TEXT.format(
-                    escape_markdown(first_name),
-                    escape_markdown(uptime),
-                    sql.num_users(),
-                    sql.num_chats()),
-                reply_markup=InlineKeyboardMarkup(buttons),
-                parse_mode=ParseMode.MARKDOWN,
-                timeout=60,
-                disable_web_page_preview=False,
+            PM_START_TEXT.format(
+                escape_markdown(first_name),
+                escape_markdown(uptime),
+                sql.num_users(),
+                sql.num_chats(),
+            ),
+            reply_markup=InlineKeyboardMarkup(buttons),
+            parse_mode=ParseMode.MARKDOWN,
+            timeout=60,
+            disable_web_page_preview=False,
         )
+
 
 def get_help(update: Update, context: CallbackContext):
     chat = update.effective_chat  # type: Optional[Chat]
@@ -793,9 +829,9 @@ def main():
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
             dispatcher.bot.sendMessage(
-                f"@{SUPPORT_CHAT}", 
+                f"@{SUPPORT_CHAT}",
                 "✨ Hi, AlexyRobot Activated Successfully",
-                parse_mode=ParseMode.MARKDOWN
+                parse_mode=ParseMode.MARKDOWN,
             )
         except Unauthorized:
             LOGGER.warning(
