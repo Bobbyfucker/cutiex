@@ -83,7 +83,7 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 *Hello {} !*
-✪ I'm an **Alexy** management bot [✨](https://telegra.ph/file/ef22a55cd1cd6f039a80e.jpg)
+✪ I'm an **Cutie** management bot [✨](https://telegra.ph/file/eafbfcd3dc4aab587bf4a.jpg)
 ────────────────────────
 × *Uptime:* `{}`
 × `{}` *users, across* `{}` *chats.*
@@ -93,17 +93,17 @@ PM_START_TEXT = """
 
 buttons = [
     [
-        InlineKeyboardButton(text="About Alexy Robot", callback_data="yins_"),
+        InlineKeyboardButton(text="【🧚‍♀️ᴀʙᴏᴜᴛ ᴍᴇ🧚‍♂️】", callback_data="yins_"),
     ],
     [
-        InlineKeyboardButton(text="Get Help", callback_data="help_back"),
+        InlineKeyboardButton(text="【🤡ᴄᴏᴍᴍᴀɴᴅs ʜᴇʟᴘ🤡】", callback_data="help_back"),
         InlineKeyboardButton(
             text="Try inline!​​", switch_inline_query_current_chat=""
         ),
     ],
     [
         InlineKeyboardButton(
-            text="➗ Add Alexy To Your Group ➗", url=f"t.me/{bu}?startgroup=new"),
+            text="【🌟ᴀᴅᴅ ᴍᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ🌟】", url=f"t.me/{bu}?startgroup=new"),
     ],
 ]
 
