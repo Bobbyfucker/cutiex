@@ -382,7 +382,7 @@ def yins_about_callback(update, context):
                     InlineKeyboardButton(text="【😈ᴄᴏᴍʀᴀᴅᴇ😈】", callback_data="HiTechRocket"),
                  ],
                  [
-                    InlineKeyboardButton(text="【🌍ɴᴇᴛᴡᴏʀᴋ🌏】", url="https://github.com/Thilinaweerasekara2003/YinsRobot"),
+                    InlineKeyboardButton(text="【🌍ɴᴇᴛᴡᴏʀᴋ🌏】", url="https://t.me/comrade_network"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="Alexy_back"),
@@ -436,13 +436,13 @@ def yins_about_callback(update, context):
     elif query.data == "Alexy_support":
         query.message.edit_text(
             text="*๏ Yins support chats*"
-            "\nJoin My Support Group/Channel for see or report a problem on Alexy.",
+            "\nJoin My Support Group/Channel for see or report a problem on cutie.",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="【👑sᴜᴘᴘᴏʀᴛ👑】", url="https://t.me/comrade_network"),
-                    InlineKeyboardButton(text="【🌍ɴᴇᴛᴡᴏʀᴋ🌏】", url="https://t.me/comrade_robotz"),
+                    InlineKeyboardButton(text="【👑sᴜᴘᴘᴏʀᴛ👑】", url="https://t.me/comrade_robotz"),
+                    InlineKeyboardButton(text="【🌍ɴᴇᴛᴡᴏʀᴋ🌏】", url="https://t.me/comrade_network"),
                  ],
                  [
                     InlineKeyboardButton(text="【🌟ɢᴏ ʙᴀᴄᴋ🌟】", callback_data="yins_"),
@@ -456,15 +456,15 @@ def yins_about_callback(update, context):
     elif query.data == "Alexy_credit":
         query.message.edit_text(
             text=f"๏ Credis for Alexy\n"
-            "\nHere Developers Making And Give Inspiration For Made The Alexy_Robot",
+            "\n𝗨𝗡𝗗𝗘𝗥🔻𝗧𝗘𝗔𝗠 𝗖𝗢𝗠𝗥𝗔𝗗𝗘🔺 𝗚𝗥𝗢𝗨𝗣𝗦",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="ThilinaWeerasekara", url="https://github.com/Thilinaweerasekara2003"),  
+                    InlineKeyboardButton(text="༝༚❰ ᴅᴇᴀʀ🔞ᴄᴏᴍʀᴀᴅ𝛆 ❱༟", url="https://t.me/tamil_comrade"),  
                  ],
                  [
-                    InlineKeyboardButton(text="AlexyMusic", url="t.me/HiTechRockets"),
+                    InlineKeyboardButton(text="༝༚❰ ᴋᴀᴅᴀʟᴏʀᴀ🖤ᴋᴀᴅᴀʟᴀɪ❱༟", url="https://t.me/kadalora_kadalai"),
                     InlineKeyboardButton(text="AlexyRobot", url="https://github.com/Thilinaweerasekara2003/Alexy"),
                  ],
                 
