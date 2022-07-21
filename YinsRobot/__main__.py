@@ -408,7 +408,7 @@ def yins_about_callback(update, context):
     elif query.data == "Alexy_admin":
         query.message.edit_text(
             text=f"*๏ Let's make your group bit effective now*"
-            "\nCongragulations, AlexyRobot now ready to manage your group."
+            "\nCongragulations, cutieRobot now ready to manage your group."
             "\n\n*Admin Tools*"
             "\nBasic Admin tools help you to protect and powerup your group."
             "\nYou can ban members, Kick members, Promote someone as admin through commands of bot."
@@ -435,7 +435,7 @@ def yins_about_callback(update, context):
         )
     elif query.data == "Alexy_support":
         query.message.edit_text(
-            text="*๏ Yins support chats*"
+            text="*๏ comrade support chats*"
             "\nJoin My Support Group/Channel for see or report a problem on cutie.",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
@@ -465,19 +465,19 @@ def yins_about_callback(update, context):
                  ],
                  [
                     InlineKeyboardButton(text="༝༚❰ ᴋᴀᴅᴀʟᴏʀᴀ🖤ᴋᴀᴅᴀʟᴀɪ❱༟", url="https://t.me/kadalora_kadalai"),
-                    InlineKeyboardButton(text="AlexyRobot", url="https://github.com/Thilinaweerasekara2003/Alexy"),
+                    InlineKeyboardButton(text="༝༚❰ ʀᴏʏᴀʟ 👑ғᴀᴍɪʟʏ❱༟", url="https://t.me/tamilchatroyalfamily"),
                  ],
                 
                  [
-                    InlineKeyboardButton(text="Inuka Asith", url="https://github.com/inukaasith"),
-                    InlineKeyboardButton(text="Noob-Kittu", url="https://github.com/noob-kittu"),
+                    InlineKeyboardButton(text="༝༚❰ 🍁sɪᴠᴀᴍᴀʏᴀᴍ🍁 ❱༟ ", url="https://t.me/SiVaMaYaMm"),
+                    InlineKeyboardButton(text="༝༚❰ 🎶ᴍᴜsɪᴄ sᴛᴀᴛɪᴏɴ🎶 ❱༟", url="https://t.me/dc_music_station"),
                  ],
                  [
-                    InlineKeyboardButton(text="Queen Arzoo", url="https://github.com/QueenArzoo"),
-                    InlineKeyboardButton(text="Paul Larsen", url="https://github.com/PaulSonOfLars"),
+                    InlineKeyboardButton(text="😉𝐔ɾυƚυ 𝐌αɱα 𝐔ʅʅα 𝐕αɱαα😻", url="https:t.me/ullavanthu_uruttu"),
+                    InlineKeyboardButton(text="༚❰🔻sǫᴜɪᴅ ɢᴀᴍᴇ🔺❱༟", url="https://t.me/squid_game_x"),
                  ],
                  [
-                    InlineKeyboardButton(text="Go Back", callback_data="yins_"),
+                    InlineKeyboardButton(text="【𝗚𝗢 𝗕𝗔𝗖𝗞】", callback_data="yins_"),
                  ]
                 ]
             ),
@@ -745,7 +745,7 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 1377217980:
+        if OWNER_ID != 5448900586:
             update.effective_message.reply_text(
                 "I'm free for everyone ❤️ If you wanna make me smile, just join"
                 "[My Channel]({})".format(DONATION_LINK),
