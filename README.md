@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://telegra.ph/file/bfe45340d1469a65ba071.jpg">
+  <img src="https://telegra.ph/file/eafbfcd3dc4aab587bf4a.jpg">
 </p>
 
 <h4><p align="center"> Alexy ROBOT </p></h4>
